@@ -1,4 +1,16 @@
 var canvas = document.getElementById("canvas");
+var audio = new Audio("audio/AUDIO-2024-05-21-11-25-28.mp3");
+
+audio.play();
+
+// Encontre o botão pelo seu ID
+var playButton = document.getElementById("playButton");
+
+// Adicione um ouvinte de evento ao botão
+playButton.addEventListener("click", function() {
+  // Reproduza o áudio quando o botão for clicado
+  audio.play();
+});
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
